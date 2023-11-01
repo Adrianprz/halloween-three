@@ -1,0 +1,24 @@
+.list {
+  gap: 30px;
+  list-style: none;
+  position: relative;
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  opacity: 0.5;
+  animation: 1.5s normal forwards opacity;
+
+  & li a {
+    padding: 15px 0;
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--orange);
+    }
+  }
+}

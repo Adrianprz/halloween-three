@@ -1,0 +1,22 @@
+.loader {
+  position: "fixed";
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &__anim {
+    display: block;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--white);
+    border-radius: 50%;
+    animation: spin 7s ease-in-out;
+    animation-iteration-count: infinite;
+    transition-duration: 0.1s;
+  }
+}

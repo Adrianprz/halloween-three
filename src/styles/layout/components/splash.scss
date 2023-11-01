@@ -1,0 +1,29 @@
+.splash {
+  text-align: center;
+  opacity: 0.5;
+  position: fixed !important;
+  animation: 1.5s normal forwards opacity;
+
+  &__text {
+    width: auto;
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
+
+    @include desktop-and-up {
+      font-size: 40px;
+    }
+  }
+
+  &__subtext {
+    width: auto;
+    color: var(--gray);
+    font-weight: normal;
+    font-size: 6px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
+  }
+}

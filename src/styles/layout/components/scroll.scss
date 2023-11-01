@@ -1,0 +1,36 @@
+.scroll {
+  position: relative;
+  display: block;
+  color: var(--gray);
+  text-decoration: none;
+  padding: 0 0 8px 0;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: calc(50% - 6px);
+    width: 6px;
+    height: 14px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 1.5px);
+    transform: translateX(-0.5px) translateY(0px);
+    width: 1px;
+    height: 4px;
+    background: var(--white);
+    border-radius: 1px;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+}

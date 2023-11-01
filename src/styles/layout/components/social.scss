@@ -1,0 +1,25 @@
+.social {
+  position: fixed !important;
+  list-style: none;
+  color: var(--white);
+  font-weight: bold;
+  user-select: none;
+  display: flex;
+  top: auto !important;
+  bottom: 40px;
+  left: auto !important;
+  transform: none !important;
+  opacity: 0.5;
+  width: 100vw;
+  animation: 1.5s normal forwards opacity;
+  justify-content: center;
+  margin: 0;
+
+  & > div {
+    width: inherit;
+    max-width: var(--wrapper);
+    display: flex;
+    padding: 0 20px;
+    justify-content: flex-end;
+  }
+}

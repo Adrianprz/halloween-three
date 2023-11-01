@@ -1,0 +1,38 @@
+@keyframes opacity {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateX(-0.5px) translateY(0px);
+  }
+  80% {
+    transform: translateX(-0.5px) translateY(12px);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-bottom: solid 3px transparent;
+    border-top: solid 3px transparent;
+  }
+  50% {
+    transform: rotate(1800deg);
+    border: 3px solid var(--white);
+    border-left: solid 3px transparent;
+    border-right: solid 3px transparent;
+  }
+  100% {
+    transform: rotate(0deg);
+    border-bottom: solid 3px transparent;
+    border-top: solid 3px transparent;
+  }
+}
